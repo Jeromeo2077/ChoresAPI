@@ -13,8 +13,8 @@ CREATE TABLE chores (
     description VARCHAR(255),
     createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
     isComplete BOOLEAN DEFAULT false,
-    completedAt DATETIME CURRENT_TIMESTAMP
-) default charset utf8mb4 COMMENT '';
+    completedAt DATETIME CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
 
 INSERT into
     chores (name, description)
