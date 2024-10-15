@@ -66,3 +66,5 @@ VALUES (
         'Do Laundry',
         'Do the laundry'
     );
+
+SELECT * FROM chores;
